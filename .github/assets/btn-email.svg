@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="56" viewBox="0 0 140 56">
+  <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#a855f7"/><stop offset=".5" stop-color="#3b3b4f"/><stop offset="1" stop-color="#ea4335"/></linearGradient></defs>
+  <rect x="1" y="1" width="138" height="54" rx="27" fill="#000" stroke="url(#g)" stroke-width="2"/>
+  <path d="M28 37V20l9 8 9-8v17" fill="none" stroke="#ea4335" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <text x="56" y="34" style="font:600 17px Inter,'Segoe UI',Helvetica,Arial,sans-serif" fill="#fff">Email</text>
+</svg>

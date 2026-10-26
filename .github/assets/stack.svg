@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1056" height="240" viewBox="0 0 1056 240">
+  <defs>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="45"/></filter>
+    <clipPath id="card"><rect width="1056" height="240" rx="20"/></clipPath>
+    <style>
+      .title{font:600 13px Inter,'Segoe UI',Helvetica,Arial,sans-serif;fill:#4b4b63;letter-spacing:3.5px}
+      .label{font:700 13px Inter,'Segoe UI',Helvetica,Arial,sans-serif;letter-spacing:1.5px}
+      .pill{font:600 15px Inter,'Segoe UI',Helvetica,Arial,sans-serif;fill:#d6d6e6}
+    </style>
+  </defs>
+  <g clip-path="url(#card)">
+    <rect width="1056" height="240" fill="#07070b"/>
+    <g filter="url(#blur)">
+      <ellipse cx="420" cy="250" rx="220" ry="50" fill="#4c1d95" opacity=".75"/>
+      <ellipse cx="620" cy="255" rx="170" ry="40" fill="#1e3a8a" opacity=".7"/>
+      <ellipse cx="1000" cy="245" rx="120" ry="40" fill="#6b21a8" opacity=".5"/>
+    </g>
+  </g>
+  <rect x=".5" y=".5" width="1055" height="239" rx="20" fill="none" stroke="#2a2550" stroke-opacity=".7"/>
+
+  <text x="40" y="44" class="title">TECH STACK</text>
+
+  <text x="40" y="91" class="label" fill="#9b7cf6">AI &amp; DATA</text>
+  <g transform="translate(230,70)">
+    <rect width="82" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="41" y="20" text-anchor="middle" class="pill">Python</text>
+    <rect x="92" width="92" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="138" y="20" text-anchor="middle" class="pill">PyTorch</text>
+    <rect x="194" width="112" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="250" y="20" text-anchor="middle" class="pill">TensorFlow</text>
+    <rect x="316" width="116" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="374" y="20" text-anchor="middle" class="pill">scikit-learn</text>
+    <rect x="442" width="124" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="504" y="20" text-anchor="middle" class="pill">Hugging Face</text>
+    <rect x="576" width="86" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="619" y="20" text-anchor="middle" class="pill">Pandas</text>
+    <rect x="672" width="82" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="713" y="20" text-anchor="middle" class="pill">NumPy</text>
+  </g>
+
+  <text x="40" y="139" class="label" fill="#5b9cf6">MOBILE &amp; BACKEND</text>
+  <g transform="translate(230,118)">
+    <rect width="76" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="38" y="20" text-anchor="middle" class="pill">Kotlin</text>
+    <rect x="86" width="86" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="129" y="20" text-anchor="middle" class="pill">Android</text>
+    <rect x="182" width="152" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="258" y="20" text-anchor="middle" class="pill">Jetpack Compose</text>
+    <rect x="344" width="86" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="387" y="20" text-anchor="middle" class="pill">FastAPI</text>
+    <rect x="440" width="112" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="496" y="20" text-anchor="middle" class="pill">PostgreSQL</text>
+    <rect x="562" width="80" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="602" y="20" text-anchor="middle" class="pill">SQLite</text>
+  </g>
+
+  <text x="40" y="187" class="label" fill="#2dd4bf">DEVOPS &amp; TOOLS</text>
+  <g transform="translate(230,166)">
+    <rect width="84" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="42" y="20" text-anchor="middle" class="pill">Fedora</text>
+    <rect x="94" width="54" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="121" y="20" text-anchor="middle" class="pill">Git</text>
+    <rect x="158" width="82" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="199" y="20" text-anchor="middle" class="pill">GitHub</text>
+    <rect x="250" width="84" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="292" y="20" text-anchor="middle" class="pill">Docker</text>
+    <rect x="344" width="88" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="388" y="20" text-anchor="middle" class="pill">VS Code</text>
+    <rect x="442" width="140" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="512" y="20" text-anchor="middle" class="pill">Android Studio</text>
+    <rect x="592" width="66" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="625" y="20" text-anchor="middle" class="pill">Bash</text>
+  </g>
+</svg>
