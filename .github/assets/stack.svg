@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1056" height="240" viewBox="0 0 1056 240">
+<svg xmlns="http://www.w3.org/2000/svg" width="1056" height="206" viewBox="0 0 1056 206">
   <defs>
     <filter id="blur" filterUnits="userSpaceOnUse" x="-400" y="-400" width="1856" height="1200"><feGaussianBlur stdDeviation="62"/></filter>
-    <clipPath id="card"><rect width="1056" height="240" rx="20"/></clipPath>
+    <clipPath id="card"><rect width="1056" height="206" rx="20"/></clipPath>
     <style>
       .title{font:600 13px Inter,'Segoe UI',Helvetica,Arial,sans-serif;fill:#4b4b63;letter-spacing:3.5px}
       .label{font:700 13px Inter,'Segoe UI',Helvetica,Arial,sans-serif;letter-spacing:1.5px}
@@ -14,23 +14,17 @@
       @keyframes driftC{0%{transform:translateX(0) scale(.85);opacity:.6}33%{transform:translateX(-60px) scale(1.2);opacity:.9}66%{transform:translateX(50px) scale(1);opacity:.55}100%{transform:translateX(110px) scale(1.3);opacity:.8}}
       .breathe{animation:breathe 4s ease-in-out infinite}
       @keyframes breathe{0%,100%{opacity:.75}50%{opacity:1}}
-      .net{opacity:0;animation:net 7s ease-in-out infinite;animation-delay:4.6s}
-      @keyframes net{0%{opacity:0;transform:translateY(25px)}12%{opacity:.9}30%{opacity:.6}45%,100%{opacity:0;transform:translateY(-10px)}}
     </style>
-    <pattern id="dots" width="9" height="9" patternUnits="userSpaceOnUse"><circle cx="4.5" cy="4.5" r="1.4" fill="#f0a6ff"/></pattern>
-    <linearGradient id="dotfade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".7" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity=".4"/></linearGradient>
-    <radialGradient id="dotside" cx=".5" cy="1" r=".75"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
-    <mask id="dotmask" maskUnits="userSpaceOnUse" x="0" y="90" width="1056" height="150"><rect x="0" y="90" width="1056" height="150" fill="url(#dotfade)"/><rect x="0" y="90" width="1056" height="150" fill="url(#dotside)" style="mix-blend-mode:multiply"/></mask>
   </defs>  <g clip-path="url(#card)">
-    <rect width="1056" height="240" fill="#07070b"/>
+    <rect width="1056" height="206" fill="#07070b"/>
     <g filter="url(#blur)" class="breathe">
-      <ellipse cx="420" cy="250" rx="220" ry="50" fill="#9b72cb" opacity=".75"/>
-      <ellipse cx="620" cy="255" rx="170" ry="40" fill="#4285f4" opacity=".7"/>
-      <ellipse cx="1000" cy="245" rx="120" ry="40" fill="#9b72cb" opacity=".5"/>
+      <ellipse cx="420" cy="216" rx="220" ry="50" fill="#9b72cb" opacity=".75"/>
+      <ellipse cx="620" cy="221" rx="170" ry="40" fill="#4285f4" opacity=".7"/>
+      <ellipse cx="1000" cy="211" rx="120" ry="40" fill="#9b72cb" opacity=".5"/>
     </g>
-    <rect class="net" x="0" y="90" width="1056" height="150" fill="url(#dots)" mask="url(#dotmask)"/>
   </g>
-  <rect x=".5" y=".5" width="1055" height="239" rx="20" fill="none" stroke="#2a2550" stroke-opacity=".7"/>
+  <rect x=".5" y=".5" width="1055" height="205" rx="20" fill="none" stroke="#2a2550" stroke-opacity=".7"/>
+  <g transform="translate(0,-10)">
 
   <text x="40" y="44" class="title">TECH STACK</text>
 
@@ -64,5 +58,6 @@
     <rect x="344" width="88" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="388" y="20" text-anchor="middle" class="pill">VS Code</text>
     <rect x="442" width="140" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="512" y="20" text-anchor="middle" class="pill">Android Studio</text>
     <rect x="592" width="66" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="625" y="20" text-anchor="middle" class="pill">Bash</text>
+  </g>
   </g>
 </svg>
