@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1056" height="300" viewBox="0 0 1056 300">
   <defs>
-    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="45"/></filter>
+    <filter id="blur" filterUnits="userSpaceOnUse" x="-400" y="-400" width="1856" height="1200"><feGaussianBlur stdDeviation="62"/></filter>
     <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#6d4aff"/><stop offset="1" stop-color="#2f6bff"/>
     </linearGradient>
@@ -16,6 +16,12 @@
       .r2{animation-delay:4s}.r3{animation-delay:8s}.r4{animation-delay:12s}
       @keyframes show{0%,24.9%{opacity:1}25%,100%{opacity:0}}
       @keyframes type{0%{transform:translateX(-520px)}14%,100%{transform:translateX(0)}}
+      ellipse{transform-box:fill-box;transform-origin:center;animation:drift 8s ease-in-out infinite alternate}
+      ellipse:nth-child(2){animation-duration:10s;animation-direction:alternate-reverse}
+      ellipse:nth-child(3){animation-duration:6.5s}
+      @keyframes drift{0%{transform:translateX(-70px) scale(1);opacity:.55}50%{transform:translateX(30px) scale(1.2);opacity:.9}100%{transform:translateX(90px) scale(.9);opacity:.6}}
+      .breathe{animation:breathe 4s ease-in-out infinite}
+      @keyframes breathe{0%,100%{opacity:.75}50%{opacity:1}}
     </style>
     <clipPath id="t1"><rect class="reveal" x="224" y="220" width="520" height="30"/></clipPath>
     <clipPath id="t2"><rect class="reveal r2" x="224" y="220" width="520" height="30"/></clipPath>
@@ -24,10 +30,10 @@
   </defs>
   <g clip-path="url(#card)">
     <rect width="1056" height="300" fill="#07070b"/>
-    <g filter="url(#blur)">
-      <ellipse cx="250" cy="320" rx="200" ry="45" fill="#5b21b6" opacity=".7"/>
-      <ellipse cx="560" cy="310" rx="230" ry="50" fill="#1e3a8a" opacity=".8"/>
-      <ellipse cx="1020" cy="300" rx="120" ry="40" fill="#0e7490" opacity=".5"/>
+    <g filter="url(#blur)" class="breathe">
+      <ellipse cx="250" cy="320" rx="200" ry="45" fill="#9b72cb" opacity=".7"/>
+      <ellipse cx="560" cy="310" rx="230" ry="50" fill="#4285f4" opacity=".8"/>
+      <ellipse cx="1020" cy="300" rx="120" ry="40" fill="#d96570" opacity=".5"/>
     </g>
   </g>
   <rect x=".5" y=".5" width="1055" height="299" rx="20" fill="none" stroke="#2a2550" stroke-opacity=".7"/>

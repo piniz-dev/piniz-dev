@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1056" height="230" viewBox="0 0 1056 230">
   <defs>
-    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="45"/></filter>
+    <filter id="blur" filterUnits="userSpaceOnUse" x="-400" y="-400" width="1856" height="1200"><feGaussianBlur stdDeviation="62"/></filter>
     <clipPath id="card"><rect width="1056" height="230" rx="20"/></clipPath>
     <style>
       .title{font:600 13px Inter,'Segoe UI',Helvetica,Arial,sans-serif;fill:#4b4b63;letter-spacing:3.5px}
@@ -8,13 +8,21 @@
       .pill{font:600 15px Inter,'Segoe UI',Helvetica,Arial,sans-serif;fill:#d6d6e6}
       .dot{animation:pulse 2s infinite}
       @keyframes pulse{50%{opacity:.25}}
+      ellipse{transform-box:fill-box;transform-origin:center;animation:drift 8s ease-in-out infinite alternate}
+      ellipse:nth-child(2){animation-duration:10s;animation-direction:alternate-reverse}
+      ellipse:nth-child(3){animation-duration:6.5s}
+      @keyframes drift{0%{transform:translateX(-70px) scale(1);opacity:.55}50%{transform:translateX(30px) scale(1.2);opacity:.9}100%{transform:translateX(90px) scale(.9);opacity:.6}}
+      ellipse{animation-name:driftB;animation-duration:9s}ellipse:nth-child(2){animation-duration:7s}
+      @keyframes driftB{0%{transform:translate(80px,6px) scale(1.15);opacity:.5}50%{transform:translate(-20px,-8px) scale(.95);opacity:.85}100%{transform:translate(-90px,4px) scale(1.25);opacity:.6}}
+      .breathe{animation:breathe 4s ease-in-out infinite}
+      @keyframes breathe{0%,100%{opacity:.75}50%{opacity:1}}
     </style>
   </defs>
   <g clip-path="url(#card)">
     <rect width="1056" height="230" fill="#07070b"/>
-    <g filter="url(#blur)">
-      <ellipse cx="900" cy="240" rx="200" ry="45" fill="#5b21b6" opacity=".6"/>
-      <ellipse cx="620" cy="250" rx="180" ry="40" fill="#0e7490" opacity=".45"/>
+    <g filter="url(#blur)" class="breathe">
+      <ellipse cx="900" cy="240" rx="200" ry="45" fill="#9b72cb" opacity=".6"/>
+      <ellipse cx="620" cy="250" rx="180" ry="40" fill="#d96570" opacity=".45"/>
     </g>
   </g>
   <rect x=".5" y=".5" width="1055" height="229" rx="20" fill="none" stroke="#2a2550" stroke-opacity=".7"/>
