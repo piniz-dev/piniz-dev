@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1056" height="206" viewBox="0 0 1056 206">
+  <defs>
+    <filter id="blur" filterUnits="userSpaceOnUse" x="-400" y="-400" width="1856" height="1200"><feGaussianBlur stdDeviation="62"/></filter>
+    <clipPath id="card"><rect width="1056" height="206" rx="20"/></clipPath>
+    <style>
+      .title{font:600 13px Inter,'Segoe UI',Helvetica,Arial,sans-serif;fill:#9ca3af;letter-spacing:3.5px}
+      .label{font:700 13px Inter,'Segoe UI',Helvetica,Arial,sans-serif;letter-spacing:1.5px}
+      .pill{font:600 15px Inter,'Segoe UI',Helvetica,Arial,sans-serif;fill:#1f2937}
+      .dot{animation:pulse 2s infinite}
+      @keyframes pulse{50%{opacity:.25}}
+      ellipse{transform-box:fill-box;transform-origin:center;animation:drift 8s ease-in-out infinite alternate}
+      ellipse:nth-child(2){animation-duration:10s;animation-direction:alternate-reverse}
+      ellipse:nth-child(3){animation-duration:6.5s}
+      @keyframes drift{0%{transform:translateX(-70px) scale(1);opacity:.55}50%{transform:translateX(30px) scale(1.2);opacity:.9}100%{transform:translateX(90px) scale(.9);opacity:.6}}
+      ellipse{animation-name:driftB;animation-duration:9s}ellipse:nth-child(2){animation-duration:7s}
+      @keyframes driftB{0%{transform:translate(80px,6px) scale(1.15);opacity:.5}50%{transform:translate(-20px,-8px) scale(.95);opacity:.85}100%{transform:translate(-90px,4px) scale(1.25);opacity:.6}}
+      .breathe{animation:breathe 4s ease-in-out infinite}
+      @keyframes breathe{0%,100%{opacity:.75}50%{opacity:1}}
+    </style>
+  </defs>  <g clip-path="url(#card)">
+    <rect width="1056" height="206" fill="#ffffff"/>
+    <g filter="url(#blur)" class="breathe">
+      <ellipse cx="900" cy="216" rx="200" ry="45" fill="#9b72cb" opacity=".6"/>
+      <ellipse cx="620" cy="226" rx="180" ry="40" fill="#d96570" opacity=".45"/>
+    </g>
+  </g>
+  <rect x=".5" y=".5" width="1055" height="205" rx="20" fill="none" stroke="#e5e1f5" stroke-opacity=".7"/>
+  <g transform="translate(0,-10)">
+
+  <text x="40" y="44" class="title">SYSTEM STATUS</text>
+  <circle class="dot" cx="192" cy="39" r="4" fill="#22c55e"/>
+  <text x="204" y="44" style="font:600 12px Inter,'Segoe UI',Helvetica,Arial,sans-serif" fill="#22c55e">online</text>
+
+  <text x="40" y="91" class="label" fill="#9b7cf6">OS &amp; ENV</text>
+  <g transform="translate(190,70)">
+    <rect width="128" height="30" rx="7" fill="#f6f7fb" stroke="#e3e5ee"/><text x="64" y="20" text-anchor="middle" class="pill">Fedora Linux</text>
+    <rect x="138" width="88" height="30" rx="7" fill="#f6f7fb" stroke="#e3e5ee"/><text x="182" y="20" text-anchor="middle" class="pill">VS Code</text>
+    <rect x="236" width="88" height="30" rx="7" fill="#f6f7fb" stroke="#e3e5ee"/><text x="280" y="20" text-anchor="middle" class="pill">Jupyter</text>
+  </g>
+
+  <text x="40" y="139" class="label" fill="#5b9cf6">SKILLS</text>
+  <g transform="translate(190,118)">
+    <rect width="160" height="30" rx="7" fill="#f6f7fb" stroke="#e3e5ee"/><text x="80" y="20" text-anchor="middle" class="pill">Machine Learning</text>
+    <rect x="170" width="136" height="30" rx="7" fill="#f6f7fb" stroke="#e3e5ee"/><text x="238" y="20" text-anchor="middle" class="pill">Deep Learning</text>
+    <rect x="316" width="204" height="30" rx="7" fill="#f6f7fb" stroke="#e3e5ee"/><text x="418" y="20" text-anchor="middle" class="pill">ETL / Data Management</text>
+    <rect x="530" width="200" height="30" rx="7" fill="#f6f7fb" stroke="#e3e5ee"/><text x="630" y="20" text-anchor="middle" class="pill">Native Android (Kotlin)</text>
+  </g>
+
+  <text x="40" y="187" class="label" fill="#f5a524">BUILDING</text>
+  <g transform="translate(190,166)">
+    <rect width="380" height="30" rx="7" fill="#efeafe" stroke="#d9cff9"/><text x="190" y="20" text-anchor="middle" class="pill">Native Fitness App · FastAPI + Jetpack Compose</text>
+    <rect x="390" width="320" height="30" rx="7" fill="#efeafe" stroke="#d9cff9"/><text x="550" y="20" text-anchor="middle" class="pill">Local LLM quantization &amp; optimization</text>
+  </g>
+  </g>
+</svg>

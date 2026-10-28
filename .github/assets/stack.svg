@@ -28,36 +28,34 @@
 
   <text x="40" y="44" class="title">TECH STACK</text>
 
-  <text x="40" y="91" class="label" fill="#9b7cf6">AI &amp; DATA</text>
+  <text x="40" y="91" class="label" fill="#9b7cf6">MACHINE LEARNING</text>
   <g transform="translate(230,70)">
     <rect width="82" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="41" y="20" text-anchor="middle" class="pill">Python</text>
     <rect x="92" width="92" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="138" y="20" text-anchor="middle" class="pill">PyTorch</text>
     <rect x="194" width="112" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="250" y="20" text-anchor="middle" class="pill">TensorFlow</text>
     <rect x="316" width="116" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="374" y="20" text-anchor="middle" class="pill">scikit-learn</text>
     <rect x="442" width="124" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="504" y="20" text-anchor="middle" class="pill">Hugging Face</text>
-    <rect x="576" width="86" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="619" y="20" text-anchor="middle" class="pill">Pandas</text>
-    <rect x="672" width="82" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="713" y="20" text-anchor="middle" class="pill">NumPy</text>
+    <rect x="576" width="88" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="620" y="20" text-anchor="middle" class="pill">Jupyter</text>
   </g>
 
-  <text x="40" y="139" class="label" fill="#5b9cf6">MOBILE &amp; BACKEND</text>
+  <text x="40" y="139" class="label" fill="#5b9cf6">LLM &amp; DATA</text>
   <g transform="translate(230,118)">
-    <rect width="76" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="38" y="20" text-anchor="middle" class="pill">Kotlin</text>
-    <rect x="86" width="86" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="129" y="20" text-anchor="middle" class="pill">Android</text>
-    <rect x="182" width="152" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="258" y="20" text-anchor="middle" class="pill">Jetpack Compose</text>
-    <rect x="344" width="86" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="387" y="20" text-anchor="middle" class="pill">FastAPI</text>
-    <rect x="440" width="112" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="496" y="20" text-anchor="middle" class="pill">PostgreSQL</text>
-    <rect x="562" width="80" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="602" y="20" text-anchor="middle" class="pill">SQLite</text>
+    <rect width="128" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="64" y="20" text-anchor="middle" class="pill">Transformers</text>
+    <rect x="138" width="102" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="189" y="20" text-anchor="middle" class="pill">llama.cpp</text>
+    <rect x="250" width="72" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="286" y="20" text-anchor="middle" class="pill">GGUF</text>
+    <rect x="332" width="86" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="375" y="20" text-anchor="middle" class="pill">Pandas</text>
+    <rect x="428" width="82" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="469" y="20" text-anchor="middle" class="pill">NumPy</text>
+    <rect x="520" width="112" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="576" y="20" text-anchor="middle" class="pill">PostgreSQL</text>
   </g>
 
-  <text x="40" y="187" class="label" fill="#2dd4bf">DEVOPS &amp; TOOLS</text>
+  <text x="40" y="187" class="label" fill="#2dd4bf">APPS &amp; TOOLS</text>
   <g transform="translate(230,166)">
-    <rect width="84" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="42" y="20" text-anchor="middle" class="pill">Fedora</text>
-    <rect x="94" width="54" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="121" y="20" text-anchor="middle" class="pill">Git</text>
-    <rect x="158" width="82" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="199" y="20" text-anchor="middle" class="pill">GitHub</text>
-    <rect x="250" width="84" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="292" y="20" text-anchor="middle" class="pill">Docker</text>
-    <rect x="344" width="88" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="388" y="20" text-anchor="middle" class="pill">VS Code</text>
-    <rect x="442" width="140" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="512" y="20" text-anchor="middle" class="pill">Android Studio</text>
-    <rect x="592" width="66" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="625" y="20" text-anchor="middle" class="pill">Bash</text>
+    <rect width="86" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="43" y="20" text-anchor="middle" class="pill">FastAPI</text>
+    <rect x="96" width="76" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="134" y="20" text-anchor="middle" class="pill">Kotlin</text>
+    <rect x="182" width="152" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="258" y="20" text-anchor="middle" class="pill">Jetpack Compose</text>
+    <rect x="344" width="84" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="386" y="20" text-anchor="middle" class="pill">Docker</text>
+    <rect x="438" width="54" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="465" y="20" text-anchor="middle" class="pill">Git</text>
+    <rect x="502" width="72" height="30" rx="7" fill="#15151f" stroke="#2c2c3d"/><text x="538" y="20" text-anchor="middle" class="pill">Linux</text>
   </g>
   </g>
 </svg>

@@ -46,18 +46,16 @@
   <text x="207" y="138" class="role">AI &amp; Machine Learning | Data &amp; Native Android Developer</text>
 
   <g transform="translate(207,156)">
-    <rect width="76" height="30" rx="15" fill="#1e1640" stroke="#3b2f7a"/><text x="38" y="20" text-anchor="middle" class="chip">Python</text>
-    <rect x="86" width="72" height="30" rx="15" fill="#1e1640" stroke="#3b2f7a"/><text x="122" y="20" text-anchor="middle" class="chip">Kotlin</text>
-    <rect x="168" width="82" height="30" rx="15" fill="#1e1640" stroke="#3b2f7a"/><text x="209" y="20" text-anchor="middle" class="chip">PyTorch</text>
-    <rect x="260" width="80" height="30" rx="15" fill="#1e1640" stroke="#3b2f7a"/><text x="300" y="20" text-anchor="middle" class="chip">FastAPI</text>
-    <rect x="350" width="140" height="30" rx="15" fill="#1e1640" stroke="#3b2f7a"/><text x="420" y="20" text-anchor="middle" class="chip">Jetpack Compose</text>
-  </g>
+    <rect width="142" height="30" rx="15" fill="#1e1640" stroke="#3b2f7a"/><text x="71" y="20" text-anchor="middle" class="chip">Neural Networks</text>
+    <rect x="152" width="150" height="30" rx="15" fill="#1e1640" stroke="#3b2f7a"/><text x="227" y="20" text-anchor="middle" class="chip">LLM Quantization</text>
+    <rect x="312" width="164" height="30" rx="15" fill="#1e1640" stroke="#3b2f7a"/><text x="394" y="20" text-anchor="middle" class="chip">Model Optimization</text>
+    <rect x="486" width="134" height="30" rx="15" fill="#1e1640" stroke="#3b2f7a"/><text x="553" y="20" text-anchor="middle" class="chip">Data Pipelines</text>  </g>
 
   <rect x="196" y="214" width="560" height="38" rx="10" fill="#0b0b14" fill-opacity=".92" stroke="#2a2550"/>
   <text x="207" y="240" class="mono" fill="#8b6cff">❯</text>
   <g class="p"><text x="228" y="240" class="mono" fill="#cfcfe6" clip-path="url(#t1)">training deep learning models...</text></g>
   <g class="p p2"><text x="228" y="240" class="mono" fill="#cfcfe6" clip-path="url(#t2)">quantizing local LLMs → Q4_K_M</text></g>
-  <g class="p p3"><text x="228" y="240" class="mono" fill="#cfcfe6" clip-path="url(#t3)">building native Android apps in Kotlin</text></g>
+  <g class="p p3"><text x="228" y="240" class="mono" fill="#cfcfe6" clip-path="url(#t3)">fine-tuning a transformer on custom data</text></g>
   <g class="p p4"><text x="228" y="240" class="mono" fill="#cfcfe6" clip-path="url(#t4)">running ETL pipelines on fresh data</text></g>
   </g>
 </svg>
