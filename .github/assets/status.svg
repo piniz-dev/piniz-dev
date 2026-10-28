@@ -16,14 +16,20 @@
       @keyframes driftB{0%{transform:translate(80px,6px) scale(1.15);opacity:.5}50%{transform:translate(-20px,-8px) scale(.95);opacity:.85}100%{transform:translate(-90px,4px) scale(1.25);opacity:.6}}
       .breathe{animation:breathe 4s ease-in-out infinite}
       @keyframes breathe{0%,100%{opacity:.75}50%{opacity:1}}
+      .net{opacity:0;animation:net 7s ease-in-out infinite;animation-delay:2.3s}
+      @keyframes net{0%{opacity:0;transform:translateY(25px)}12%{opacity:.9}30%{opacity:.6}45%,100%{opacity:0;transform:translateY(-10px)}}
     </style>
-  </defs>
-  <g clip-path="url(#card)">
+    <pattern id="dots" width="9" height="9" patternUnits="userSpaceOnUse"><circle cx="4.5" cy="4.5" r="1.4" fill="#f0a6ff"/></pattern>
+    <linearGradient id="dotfade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".7" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity=".4"/></linearGradient>
+    <radialGradient id="dotside" cx=".5" cy="1" r=".75"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+    <mask id="dotmask" maskUnits="userSpaceOnUse" x="0" y="80" width="1056" height="150"><rect x="0" y="80" width="1056" height="150" fill="url(#dotfade)"/><rect x="0" y="80" width="1056" height="150" fill="url(#dotside)" style="mix-blend-mode:multiply"/></mask>
+  </defs>  <g clip-path="url(#card)">
     <rect width="1056" height="230" fill="#07070b"/>
     <g filter="url(#blur)" class="breathe">
       <ellipse cx="900" cy="240" rx="200" ry="45" fill="#9b72cb" opacity=".6"/>
       <ellipse cx="620" cy="250" rx="180" ry="40" fill="#d96570" opacity=".45"/>
     </g>
+    <rect class="net" x="0" y="80" width="1056" height="150" fill="url(#dots)" mask="url(#dotmask)"/>
   </g>
   <rect x=".5" y=".5" width="1055" height="229" rx="20" fill="none" stroke="#2a2550" stroke-opacity=".7"/>
 

@@ -22,19 +22,25 @@
       @keyframes drift{0%{transform:translateX(-70px) scale(1);opacity:.55}50%{transform:translateX(30px) scale(1.2);opacity:.9}100%{transform:translateX(90px) scale(.9);opacity:.6}}
       .breathe{animation:breathe 4s ease-in-out infinite}
       @keyframes breathe{0%,100%{opacity:.75}50%{opacity:1}}
+      .net{opacity:0;animation:net 7s ease-in-out infinite;animation-delay:0s}
+      @keyframes net{0%{opacity:0;transform:translateY(25px)}12%{opacity:.9}30%{opacity:.6}45%,100%{opacity:0;transform:translateY(-10px)}}
     </style>
     <clipPath id="t1"><rect class="reveal" x="224" y="220" width="520" height="30"/></clipPath>
     <clipPath id="t2"><rect class="reveal r2" x="224" y="220" width="520" height="30"/></clipPath>
     <clipPath id="t3"><rect class="reveal r3" x="224" y="220" width="520" height="30"/></clipPath>
     <clipPath id="t4"><rect class="reveal r4" x="224" y="220" width="520" height="30"/></clipPath>
-  </defs>
-  <g clip-path="url(#card)">
+    <pattern id="dots" width="9" height="9" patternUnits="userSpaceOnUse"><circle cx="4.5" cy="4.5" r="1.4" fill="#f0a6ff"/></pattern>
+    <linearGradient id="dotfade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".7" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity=".4"/></linearGradient>
+    <radialGradient id="dotside" cx=".5" cy="1" r=".75"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+    <mask id="dotmask" maskUnits="userSpaceOnUse" x="0" y="150" width="1056" height="150"><rect x="0" y="150" width="1056" height="150" fill="url(#dotfade)"/><rect x="0" y="150" width="1056" height="150" fill="url(#dotside)" style="mix-blend-mode:multiply"/></mask>
+  </defs>  <g clip-path="url(#card)">
     <rect width="1056" height="300" fill="#07070b"/>
     <g filter="url(#blur)" class="breathe">
       <ellipse cx="250" cy="320" rx="200" ry="45" fill="#9b72cb" opacity=".7"/>
       <ellipse cx="560" cy="310" rx="230" ry="50" fill="#4285f4" opacity=".8"/>
       <ellipse cx="1020" cy="300" rx="120" ry="40" fill="#d96570" opacity=".5"/>
     </g>
+    <rect class="net" x="0" y="150" width="1056" height="150" fill="url(#dots)" mask="url(#dotmask)"/>
   </g>
   <rect x=".5" y=".5" width="1055" height="299" rx="20" fill="none" stroke="#2a2550" stroke-opacity=".7"/>
 
